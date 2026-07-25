@@ -49,4 +49,4 @@ The real cost is almost never the license — it's LangSmith/LangGraph Platform 
 
 ---
 
-*See also: [frameworks.md](frameworks.md) for technical strengths/weaknesses per framework*
+*See also: [frameworks.md](frameworks.md) for technical strengths/weaknesses per framework · [claude-agent-sdk.md](claude-agent-sdk.md) for Claude Agent SDK deep-dive*

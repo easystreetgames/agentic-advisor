@@ -7,6 +7,7 @@ This repo contains a living knowledge base on agentic AI frameworks, concepts, a
 | File | What's in it |
 |------|-------------|
 | [references/frameworks.md](references/frameworks.md) | Status and selection guidance for 12+ agentic frameworks: LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Claude Agent SDK, Pydantic AI, Smolagents, and more |
+| [references/claude-agent-sdk.md](references/claude-agent-sdk.md) | Deep-dive on the Claude Agent SDK: API surfaces, Managed Agents architecture, tool use, MCP, thinking/effort, and production patterns |
 | [references/framework-costs.md](references/framework-costs.md) | Pricing, vendor lock-in, and switching cost analysis for each framework |
 | [references/concepts.md](references/concepts.md) | Core vocabulary and patterns: ReAct, memory systems, multi-agent topologies, evaluation, failure modes |
 | [references/reading-list.md](references/reading-list.md) | Curated papers, blog posts, and repos worth tracking |

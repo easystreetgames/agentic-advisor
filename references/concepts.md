@@ -1,7 +1,7 @@
 # Agentic AI Concepts Reference
 *Last updated: 2026-07-25*
 
-*See also: [frameworks.md](frameworks.md) · [framework-costs.md](framework-costs.md)*
+*See also: [frameworks.md](frameworks.md) · [framework-costs.md](framework-costs.md) · [claude-agent-sdk.md](claude-agent-sdk.md)*
 
 ---
 

@@ -113,6 +113,7 @@ The agentic framework space has fragmented into several distinct approaches. Cho
 - Designed for Claude's strengths (long context, strong instruction following, tool use)
 - Claude Code is a production reference implementation
 - Strong computer use / browser agent capabilities
+- Managed Agents surface (server-managed stateful agents with Anthropic-hosted tool execution)
 - Good for tasks requiring careful reasoning and minimal hallucination
 
 **Weaknesses:**
@@ -120,6 +121,8 @@ The agentic framework space has fragmented into several distinct approaches. Cho
 - SDK still evolving rapidly
 
 **When to use**: Claude-powered agents, computer use workflows, tasks where reasoning quality is critical over raw speed.
+
+*See also: [claude-agent-sdk.md](claude-agent-sdk.md) for a full deep-dive on surfaces, Managed Agents, tool patterns, and production guidance.*
 
 ---
 
