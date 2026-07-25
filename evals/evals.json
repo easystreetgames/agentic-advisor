@@ -1,0 +1,44 @@
+{
+  "skill_name": "agentic-advisor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm starting a new project and I need to pick between LangGraph and CrewAI. It's a customer support automation system — the workflow is: classify the ticket, route to the right specialist agent (billing, technical, account), have that agent research the issue using our knowledge base, draft a response, and then send it for human review before it goes out. Which framework fits better and why?",
+      "expected_output": "A direct recommendation for LangGraph with reasoning tied to the specific workflow — stateful routing, human-in-the-loop requirement, and conditional branching all favor LangGraph. Should acknowledge CrewAI's strengths.",
+      "assertions": [
+        "Response makes a clear, direct recommendation for LangGraph (not unresolved 'it depends')",
+        "Response mentions human-in-the-loop or human review gate as a key factor",
+        "Response connects LangGraph's stateful/graph structure to the specific workflow steps",
+        "Response acknowledges CrewAI's strengths and explains when it would be the right choice",
+        "Response is actionable — leads with the decision, not background theory"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Give me a briefing on what's happened in the agentic AI space recently. I haven't checked in a few weeks.",
+      "expected_output": "A structured briefing with all 5 sections (TL;DR, Framework Updates, Research Highlights, Industry Moves, What to Watch), at least 2 sources with URLs, recent content from 2025/2026, and specific named developments.",
+      "assertions": [
+        "Response contains all 5 required sections: TL;DR, Framework Updates, Research Highlights, Industry Moves, What to Watch",
+        "Response includes at least 2 sources with clickable URLs",
+        "Response references content from 2025 or 2026 (not just pre-training knowledge)",
+        "TL;DR is concise — 2-3 sentences",
+        "Each section contains specific, named developments — not vague generalities"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "My agent keeps looping — it seems to get stuck trying the same tool call over and over when it doesn't work. What's the right pattern to handle tool failures and prevent infinite loops?",
+      "expected_output": "Practical answer covering: max iteration limits, error message design for LLMs, fallback strategies, concrete implementation patterns, and when to surface vs. handle failures internally.",
+      "assertions": [
+        "Response covers iteration/step limits as a core mitigation",
+        "Response explains how to write tool error messages LLMs can act on",
+        "Response covers a fallback strategy beyond just retrying",
+        "Response includes concrete implementation guidance — patterns, pseudocode, or framework-specific examples",
+        "Response explains when to surface the failure to the user vs. handle internally"
+      ],
+      "files": []
+    }
+  ]
+}
