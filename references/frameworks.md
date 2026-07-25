@@ -1,6 +1,8 @@
 # Agentic Frameworks Reference
 *Last updated: 2026-07-25 — Always search for updates before answering framework questions.*
 
+*See also: [framework-costs.md](framework-costs.md) for pricing, lock-in, and switching cost analysis*
+
 ---
 
 ## Framework Landscape Overview

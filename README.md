@@ -7,13 +7,14 @@ This repo contains a living knowledge base on agentic AI frameworks, concepts, a
 | File | What's in it |
 |------|-------------|
 | [references/frameworks.md](references/frameworks.md) | Status and selection guidance for 12+ agentic frameworks: LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Claude Agent SDK, Pydantic AI, Smolagents, and more |
+| [references/framework-costs.md](references/framework-costs.md) | Pricing, vendor lock-in, and switching cost analysis for each framework |
 | [references/concepts.md](references/concepts.md) | Core vocabulary and patterns: ReAct, memory systems, multi-agent topologies, evaluation, failure modes |
 | [references/reading-list.md](references/reading-list.md) | Curated papers, blog posts, and repos worth tracking |
 | [knowledge/briefing-log.md](knowledge/briefing-log.md) | Append-only log of completed briefings — a quick way to see what's changed recently |
 
 ## How to Read These
 
-**For framework selection** — start with [references/frameworks.md](references/frameworks.md). Each framework has a status, a short characterization, and notes on when to use it vs. alternatives.
+**For framework selection** — start with [references/frameworks.md](references/frameworks.md). Each framework has a status, a short characterization, and notes on when to use it vs. alternatives. For cost and lock-in considerations, see [references/framework-costs.md](references/framework-costs.md).
 
 **For concepts and patterns** — [references/concepts.md](references/concepts.md) is organized by topic. Useful as a glossary and as a mental model builder.
 

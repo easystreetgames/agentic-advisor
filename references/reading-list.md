@@ -1,6 +1,8 @@
 # Agentic AI Reading List
 *Last updated: 2026-07-25 — Search for newer resources before recommending.*
 
+*See also: [frameworks.md](frameworks.md) · [framework-costs.md](framework-costs.md)*
+
 ---
 
 ## Foundational Papers

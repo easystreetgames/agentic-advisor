@@ -1,6 +1,8 @@
 # Agentic AI Concepts Reference
 *Last updated: 2026-07-25*
 
+*See also: [frameworks.md](frameworks.md) · [framework-costs.md](framework-costs.md)*
+
 ---
 
 ## Core Agent Loop
