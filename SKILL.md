@@ -125,6 +125,7 @@ New products, model capabilities, funding, or shifts in how companies are deploy
 
 - `references/frameworks.md` — Status, strengths, weaknesses, and when to use each framework. Read for framework comparison/selection questions.
 - `references/concepts.md` — Core concepts, vocabulary, and design patterns. Read when the user asks about a concept that may have nuance beyond the obvious.
+- `references/tool-use.md` — Deep dive on tool use / function calling: wire protocol, schema design, parallel calls, error handling, MCP internals, security, performance, anti-patterns. Read for any specific question about how tool use works.
 - `references/reading-list.md` — Key papers, posts, and repos. Read when the user asks for resources or wants to go deeper on a topic.
 
 These files grow over time. Update them when you learn something worth preserving — new capability, corrected understanding, better pattern. Include the date so the user can see what's current. Briefing mode should read briefing-log.md; Q&A mode should read selectively per the rules above.
