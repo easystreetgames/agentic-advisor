@@ -298,8 +298,9 @@ MCP is Anthropic's open standard for exposing tools, resources, and prompts to a
 | **Prompts** | Parameterized prompt templates | Reusable multi-step workflows |
 
 **Transports:**
-- **stdio** — server runs as a subprocess, communicates over stdin/stdout. Good for local tools, dev.
-- **HTTP + SSE** — server is an HTTP service, client POSTs requests, server streams responses. Production standard. Stateless scaling, deployable anywhere.
+- **stdio** — server runs as a subprocess, communicates over stdin/stdout. Good for local tools, dev environments.
+- **Streamable HTTP** — single HTTP endpoint that handles both directions; can use SSE internally but doesn't require it. Production standard as of MCP spec 2025-03-26. Stateless, horizontally scalable, deployable anywhere. Use this for anything remote or multi-client.
+- **HTTP+SSE** — two-endpoint model (POST + persistent SSE connection). **Deprecated** in the 2025-03-26 MCP spec. Don't build new servers on this; major platforms (Atlassian, Keboola) ended support mid-2026.
 
 **Core protocol flow:**
 
@@ -314,7 +315,7 @@ Tool result content types: `text`, `image` (base64), `resource` (URI reference).
 **What MCP adds over raw tool definitions:**
 - A server can expose dozens of tools without cluttering the model's context — the client fetches the list dynamically
 - Versioning and capability negotiation built into the protocol
-- Servers are reusable across different models and clients
+- Servers are reusable across different models and clients — MCP is now the cross-provider standard, adopted by Anthropic, OpenAI, and Google
 - Resources and prompts are composable alongside tools
 
 **MCP vs. custom tools — when to use which:**

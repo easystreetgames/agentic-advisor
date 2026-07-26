@@ -4,25 +4,18 @@ This repo contains a living knowledge base on agentic AI frameworks, concepts, a
 
 ## Reference Files
 
-| File | What's in it |
-|------|-------------|
-| [references/frameworks.md](references/frameworks.md) | Status and selection guidance for 12+ agentic frameworks: LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Claude Agent SDK, Pydantic AI, Smolagents, and more |
-| [references/claude-agent-sdk.md](references/claude-agent-sdk.md) | Deep-dive on the Claude Agent SDK: API surfaces, Managed Agents architecture, tool use, MCP, thinking/effort, and production patterns |
-| [references/framework-costs.md](references/framework-costs.md) | Pricing, vendor lock-in, and switching cost analysis for each framework |
-| [references/concepts.md](references/concepts.md) | Core vocabulary and patterns: ReAct, memory systems, multi-agent topologies, evaluation, failure modes |
-| [references/reading-list.md](references/reading-list.md) | Curated papers, blog posts, and repos worth tracking |
-| [knowledge/briefing-log.md](knowledge/briefing-log.md) | Append-only log of completed briefings — a quick way to see what's changed recently |
+Read in this order if you're building up from scratch. Skip to wherever you already are.
 
-## How to Read These
-
-**For framework selection** — start with [references/frameworks.md](references/frameworks.md). Each framework has a status, a short characterization, and notes on when to use it vs. alternatives. For cost and lock-in considerations, see [references/framework-costs.md](references/framework-costs.md).
-
-**For concepts and patterns** — [references/concepts.md](references/concepts.md) is organized by topic. Useful as a glossary and as a mental model builder.
-
-**For what to read next** — [references/reading-list.md](references/reading-list.md) is organized by type (papers, blogs, repos). Items are not exhaustive — only things judged worth the time are included.
-
-**For recent developments** — skim [knowledge/briefing-log.md](knowledge/briefing-log.md) to see what topics have been covered and when.
+| Step | File | What's in it |
+|------|------|-------------|
+| 1 | [references/concepts.md](references/concepts.md) | Core vocabulary and patterns: ReAct loop, memory systems, multi-agent topologies, evaluation, failure modes. Start here — everything else assumes this vocabulary. |
+| 2 | [references/tool-use.md](references/tool-use.md) | Deep-dive on tool use / function calling: wire protocol, schema design, parallel calls, error handling, MCP internals, security, performance, and anti-patterns. Tool use is the core primitive that all agentic frameworks are built on. |
+| 3 | [references/frameworks.md](references/frameworks.md) | Status and selection guidance for 12+ frameworks: LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Claude Agent SDK, Pydantic AI, Smolagents, and more. Once you understand the primitives, pick your framework here. |
+| 4 | [references/framework-costs.md](references/framework-costs.md) | Pricing, vendor lock-in, and switching cost analysis for each framework. Read alongside frameworks.md when making a build-vs-buy or commit decision. |
+| 5 | [references/claude-agent-sdk.md](references/claude-agent-sdk.md) | Deep-dive on the Claude Agent SDK: API surfaces, Managed Agents architecture, MCP, thinking/effort, prompt caching, and production patterns. Read if you're building on Claude. |
+| — | [references/reading-list.md](references/reading-list.md) | Curated papers, blog posts, and repos worth tracking. Not exhaustive — only things judged worth the time. |
+| — | [knowledge/briefing-log.md](knowledge/briefing-log.md) | Append-only log of completed briefings. Skim this to see what topics have changed recently and when. |
 
 ## Currency
 
-Each reference file has a `Last updated` date at the top. The field moves fast; treat anything older than a few weeks as potentially stale for framework-specific claims. Concept files age more slowly.
+Each reference file has a `Last updated` date at the top. The field moves fast — treat framework-specific claims older than a few weeks as potentially stale. Concept and pattern files age more slowly.
