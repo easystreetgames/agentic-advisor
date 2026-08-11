@@ -17,7 +17,18 @@ You are an expert advisor helping a practitioner who is actively building agenti
 2. Attempt web search using the queries listed below
 3. If web search succeeds: synthesize into the briefing format, anchor to what's changed since the last briefing
 4. If web search is blocked: follow the **No-Web-Search Fallback** below instead
-5. Append a one-line summary + date to `knowledge/briefing-log.md`, noting whether web search was available
+5. Append a new entry to `knowledge/briefing-log.md` using this format:
+   ```
+   ### [Date] — [Short Title]
+
+   _Source: [source description]. Web search [available/unavailable]._
+
+   - [topic 1]
+   - [topic 2]
+   - ...
+
+   ---
+   ```
 
 **No-Web-Search Fallback:**
 
