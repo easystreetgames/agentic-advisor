@@ -190,6 +190,8 @@ tool_choice={"type": "tool", "name": "extract_entities"}
 
 `tool_choice: "tool"` with a specific name is the cleanest way to do structured extraction — define the output shape as a tool schema, force the call, never actually execute it. You just want the `input` field.
 
+> **Update 2026-09-28:** Claude Fable 5.1, Mythos 5.1, Opus 5.5, and Sonnet 5.5 return HTTP 400 for `tool_choice` types `any` and `tool`. On these models, use `auto` with strict tool use, or use structured outputs for extraction. Forced `tool_choice` still works on Opus 5, Sonnet 5, and older models. Source: [Claude Platform release notes](https://platform.claude.com/docs/en/release-notes/overview).
+
 ---
 
 ## Error Handling

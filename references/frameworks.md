@@ -65,7 +65,7 @@ The agentic framework space has fragmented into several distinct approaches. Cho
 
 ## AutoGen (Microsoft)
 
-**Status**: v0.4 was a significant rewrite (async, modular); active development
+**Status** (updated 2026-09-28): Maintenance only. Microsoft merged AutoGen with Semantic Kernel into **Microsoft Agent Framework 1.0** (April 2026). AutoGen gets security fixes only; new features land in Agent Framework. Do not start new projects on AutoGen. The community fork continues separately as AG2.
 **Best for**: Conversational multi-agent patterns, research scenarios, code execution
 
 **Strengths:**
